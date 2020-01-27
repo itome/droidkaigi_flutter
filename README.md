@@ -1,4 +1,4 @@
-# droidkaigi_flutter
+# confsched2020
 
 Yet another DroidKaigi 2020 app.
 
