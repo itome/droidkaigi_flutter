@@ -1,4 +1,4 @@
-name: droidkaigi_flutter
+name: confsched2020
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -24,6 +24,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   google_fonts: ^0.3.3
+  json_serializable: ^3.2.5
   provider:
     git:
       url: https://github.com/rrousselGit/provider.git
@@ -32,6 +33,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  build_runner: ^1.7.3
 
 
 # For information on the generic Dart part of this file, see the
