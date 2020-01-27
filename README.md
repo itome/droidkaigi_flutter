@@ -1,16 +1,21 @@
 # droidkaigi_flutter
 
-A new Flutter project.
+Yet another DroidKaigi 2020 app.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Setup your flutter environment:
+https://flutter.dev/docs/get-started/install
 
-A few resources to get you started if this is your first Flutter project:
+Enalbe web support
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+$ flutter channel beta
+$ flutter upgrade
+$ flutter config --enable-web
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Run app
+```
+$ flutter run
+```
