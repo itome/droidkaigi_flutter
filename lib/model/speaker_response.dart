@@ -23,7 +23,7 @@ class SpeakerResponse {
   final String firstName;
   final String lastName;
   final String profilePicture;
-  final List<int> sessions;
+  final List<String> sessions;
   final String tagLine;
   final bool isTopSpeaker;
   final String bio;
