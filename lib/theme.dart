@@ -35,71 +35,84 @@ ThemeData get lightTheme {
       ),
     ),
     textTheme: GoogleFonts.notoSansJPTextTheme(
-      const TextTheme(
+      TextTheme(
         // headline1
         display4: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 96,
+          color: colorScheme.onBackground,
         ),
         // headline2
         display3: TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 60,
+          color: colorScheme.onBackground,
         ),
         // headline3
         display2: TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 48,
+          color: colorScheme.onBackground,
         ),
         // headline4
         display1: TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 34,
+          color: colorScheme.onBackground,
         ),
         // headline5
         headline: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 24,
+          color: colorScheme.onBackground,
         ),
         // headline6
         title: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 20,
+          color: colorScheme.onBackground,
         ),
         // subtitle1
         subhead: TextStyle(
           fontWeight: FontWeight.w400,
           fontSize: 16,
+          color: colorScheme.onBackground,
         ),
         // subtitle2
         subtitle: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 14,
+          color: colorScheme.onBackground,
         ),
         // body1
         body1: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 16,
+          color: colorScheme.onBackground,
         ),
         // body2
         body2: TextStyle(
           fontWeight: FontWeight.w400,
           fontSize: 14,
+          color: colorScheme.onBackground,
         ),
         // button
         button: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 14,
+          color: colorScheme.onBackground,
         ),
         // caption
         caption: TextStyle(
           fontWeight: FontWeight.w400,
           fontSize: 12,
+          color: colorScheme.onBackground,
         ),
         // overline
         overline: TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: 10,
+          color: colorScheme.onBackground,
         ),
       ),
     ),
