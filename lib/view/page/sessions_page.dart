@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:confsched2020/store/session_store.dart';
 import 'package:confsched2020/ext/context.dart';
 import 'package:confsched2020/view/page/sessions_tab_page.dart';
+import 'package:confsched2020/model/session_tab.dart';
 
 class SessionsPage extends StatefulWidget {
   const SessionsPage({Key key}) : super(key: key);

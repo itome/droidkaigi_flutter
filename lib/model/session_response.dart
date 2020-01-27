@@ -45,4 +45,7 @@ class SessionResponse {
   final bool interpretationTarget;
   final String videoUrl;
   final String slideUrl;
+
+  DateTime get startsAtDate => DateTime.parse(startsAt);
+  DateTime get endsAtDate => DateTime.parse(endsAt);
 }

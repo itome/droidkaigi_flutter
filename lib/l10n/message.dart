@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 @immutable
 class Message {
   const Message({
+    @required this.locale,
     @required this.dayCount,
     @required this.event,
     @required this.myPlan,
@@ -19,6 +20,7 @@ class Message {
 
   factory Message.en() {
     return Message(
+      locale: const Locale('en', ''),
       dayCount: (count) => 'DAY$count',
       event: 'EVENT',
       myPlan: 'MY PLAN',
@@ -27,12 +29,14 @@ class Message {
 
   factory Message.ja() {
     return Message(
+      locale: const Locale('ja', ''),
       dayCount: (count) => 'DAY $count',
       event: 'EVENT',
       myPlan: 'MY PLAN',
     );
   }
 
+  final Locale locale;
   final String Function(int) dayCount;
   final String event;
   final String myPlan;
