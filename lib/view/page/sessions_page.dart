@@ -27,6 +27,8 @@ class _SessionsPageState extends State<SessionsPage> {
         appBar: AppBar(
           elevation: 0,
           title: Image.asset('assets/app_icon.png', width: 24, height: 24),
+          backgroundColor: context.theme.primaryColor,
+          iconTheme: IconThemeData(color: context.theme.colorScheme.onPrimary),
           bottom: TabBar(
             tabs: [
               Tab(child: Text(context.localized.dayCount(1))),

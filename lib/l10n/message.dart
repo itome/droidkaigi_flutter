@@ -9,6 +9,11 @@ class Message {
     @required this.myPlan,
     @required this.startFilter,
     @required this.duration,
+    @required this.intendedAudienceTitle,
+    @required this.speaker,
+    @required this.materialLabel,
+    @required this.movie,
+    @required this.slide,
   });
 
   factory Message.of(Locale locale) {
@@ -28,6 +33,11 @@ class Message {
       myPlan: 'MY PLAN',
       startFilter: 'Filter',
       duration: (minute) => '${minute}min',
+      intendedAudienceTitle: 'Intended audience',
+      speaker: 'Speaker',
+      materialLabel: 'Material',
+      movie: 'MOVIE',
+      slide: 'SLIDE',
     );
   }
 
@@ -39,6 +49,11 @@ class Message {
       myPlan: 'MY PLAN',
       startFilter: '絞り込む',
       duration: (minute) => '$minute分',
+      intendedAudienceTitle: '対象者',
+      speaker: 'スピーカー',
+      materialLabel: '資料',
+      movie: '動画',
+      slide: 'スライド',
     );
   }
 
@@ -48,4 +63,9 @@ class Message {
   final String myPlan;
   final String startFilter;
   final String Function(int) duration;
+  final String intendedAudienceTitle;
+  final String speaker;
+  final String materialLabel;
+  final String movie;
+  final String slide;
 }
