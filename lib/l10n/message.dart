@@ -8,6 +8,7 @@ class Message {
     @required this.event,
     @required this.myPlan,
     @required this.startFilter,
+    @required this.duration,
   });
 
   factory Message.of(Locale locale) {
@@ -26,6 +27,7 @@ class Message {
       event: 'EVENT',
       myPlan: 'MY PLAN',
       startFilter: 'Filter',
+      duration: (minute) => '${minute}min',
     );
   }
 
@@ -36,6 +38,7 @@ class Message {
       event: 'EVENT',
       myPlan: 'MY PLAN',
       startFilter: '絞り込む',
+      duration: (minute) => '$minute分',
     );
   }
 
@@ -44,4 +47,5 @@ class Message {
   final String event;
   final String myPlan;
   final String startFilter;
+  final String Function(int) duration;
 }

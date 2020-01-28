@@ -59,7 +59,11 @@ class _SessionsTabPageState extends State<SessionsTabPage> {
                       ),
                     ),
                     const Divider(
-                        indent: 16, endIndent: 16, height: 1, thickness: 1),
+                      indent: 16,
+                      endIndent: 16,
+                      height: 1,
+                      thickness: 1,
+                    ),
                     Expanded(
                       child: ListView.builder(
                         controller: controller,
@@ -74,6 +78,12 @@ class _SessionsTabPageState extends State<SessionsTabPage> {
                                   sessionId: info.session.id,
                                 ),
                               );
+                            },
+                            onSpeakerPressed: (_) {
+                              // TODO(itome): Navigate to speaker page.
+                            },
+                            onBookmarkPressed: (_) {
+                              // TODO(itome): Bookmark session.
                             },
                           );
                         },

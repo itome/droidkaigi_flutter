@@ -48,4 +48,6 @@ class SessionResponse {
 
   DateTime get startsAtDate => DateTime.parse(startsAt).toLocal();
   DateTime get endsAtDate => DateTime.parse(endsAt).toLocal();
+
+  int get duration => endsAtDate.difference(startsAtDate).inMinutes;
 }
