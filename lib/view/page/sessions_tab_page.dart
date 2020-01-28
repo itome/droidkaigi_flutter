@@ -38,20 +38,48 @@ class _SessionsTabPageState extends State<SessionsTabPage> {
               ),
               child: Container(
                 color: context.theme.backgroundColor,
-                child: ListView.builder(
-                  controller: controller,
-                  itemCount: sessions.length,
-                  itemBuilder: (context, index) {
-                    return SessionItem(
-                      sessionInfo: sessions[index],
-                      onSessionPressed: (info) {
-                        context.navigator.pushNamed(
-                          '/session',
-                          arguments: SessionArgs(sessionId: info.session.id),
-                        );
-                      },
-                    );
-                  },
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(
+                      height: 56,
+                      width: double.infinity,
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            Icon(Icons.sort),
+                            const SizedBox(width: 8),
+                            Text(
+                              context.localized.startFilter,
+                              style: context.theme.textTheme.button,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const Divider(
+                        indent: 16, endIndent: 16, height: 1, thickness: 1),
+                    Expanded(
+                      child: ListView.builder(
+                        controller: controller,
+                        itemCount: sessions.length,
+                        itemBuilder: (context, index) {
+                          return SessionItem(
+                            sessionInfo: sessions[index],
+                            onSessionPressed: (info) {
+                              context.navigator.pushNamed(
+                                '/session',
+                                arguments: SessionArgs(
+                                  sessionId: info.session.id,
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               ),
             );

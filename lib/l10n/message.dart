@@ -7,6 +7,7 @@ class Message {
     @required this.dayCount,
     @required this.event,
     @required this.myPlan,
+    @required this.startFilter,
   });
 
   factory Message.of(Locale locale) {
@@ -24,6 +25,7 @@ class Message {
       dayCount: (count) => 'DAY$count',
       event: 'EVENT',
       myPlan: 'MY PLAN',
+      startFilter: 'Filter',
     );
   }
 
@@ -33,6 +35,7 @@ class Message {
       dayCount: (count) => 'DAY $count',
       event: 'EVENT',
       myPlan: 'MY PLAN',
+      startFilter: '絞り込む',
     );
   }
 
@@ -40,4 +43,5 @@ class Message {
   final String Function(int) dayCount;
   final String event;
   final String myPlan;
+  final String startFilter;
 }
