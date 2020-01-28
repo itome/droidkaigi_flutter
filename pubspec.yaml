@@ -29,6 +29,7 @@ dependencies:
     git:
       url: https://github.com/rrousselGit/provider.git
       ref: extensions
+  intl: ^0.16.0
 
 dev_dependencies:
   flutter_test:
