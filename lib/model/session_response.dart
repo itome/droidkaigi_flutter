@@ -46,6 +46,6 @@ class SessionResponse {
   final String videoUrl;
   final String slideUrl;
 
-  DateTime get startsAtDate => DateTime.parse(startsAt);
-  DateTime get endsAtDate => DateTime.parse(endsAt);
+  DateTime get startsAtDate => DateTime.parse(startsAt).toLocal();
+  DateTime get endsAtDate => DateTime.parse(endsAt).toLocal();
 }
