@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:confsched2020/theme.dart';
 import 'package:confsched2020/store/session_store.dart';
 import 'package:confsched2020/view/page/sessions_page.dart';
+import 'package:confsched2020/view/page/session_page.dart';
 import 'package:confsched2020/l10n/delegate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         supportedLocales: const [Locale('ja', ''), Locale('en', '')],
         routes: {
           '/': (context) => const SessionsPage(),
+          '/session': (context) => const SessionPage(),
         },
       ),
     );

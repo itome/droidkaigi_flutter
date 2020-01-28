@@ -4,6 +4,7 @@ import 'package:confsched2020/ext/context.dart';
 import 'package:confsched2020/selector/session_selector.dart';
 import 'package:confsched2020/model/session_tab.dart';
 import 'package:confsched2020/view/component/session_item.dart';
+import 'package:confsched2020/view/page/session_page.dart';
 
 class SessionsTabPage extends StatefulWidget {
   const SessionsTabPage({Key key, @required this.tab})
@@ -41,7 +42,15 @@ class _SessionsTabPageState extends State<SessionsTabPage> {
                   controller: controller,
                   itemCount: sessions.length,
                   itemBuilder: (context, index) {
-                    return SessionItem(sessionInfo: sessions[index]);
+                    return SessionItem(
+                      sessionInfo: sessions[index],
+                      onSessionPressed: (info) {
+                        context.navigator.pushNamed(
+                          '/session',
+                          arguments: SessionArgs(sessionId: info.session.id),
+                        );
+                      },
+                    );
                   },
                 ),
               ),

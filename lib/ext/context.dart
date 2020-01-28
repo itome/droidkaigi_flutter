@@ -18,4 +18,8 @@ extension BuildContextExt on BuildContext {
   Message get localized {
     return Localized.of(this);
   }
+
+  T args<T>() {
+    return ModalRoute.of(this).settings.arguments as T;
+  }
 }
