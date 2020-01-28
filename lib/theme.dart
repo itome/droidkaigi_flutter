@@ -118,3 +118,9 @@ ThemeData get lightTheme {
     ),
   );
 }
+
+extension TextStyleExt on TextStyle {
+  TextStyle get highEmphasis => copyWith(color: color.withOpacity(1));
+  TextStyle get mediumEmphasis => copyWith(color: color.withOpacity(0.74));
+  TextStyle get disabled => copyWith(color: color.withOpacity(0.38));
+}
