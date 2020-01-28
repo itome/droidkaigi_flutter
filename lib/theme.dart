@@ -23,6 +23,7 @@ ThemeData get lightTheme {
     primaryColor: colorScheme.primary,
     primaryColorDark: colorScheme.primaryVariant,
     backgroundColor: colorScheme.background,
+    scaffoldBackgroundColor: colorScheme.background,
     errorColor: colorScheme.error,
     tabBarTheme: TabBarTheme(
       indicator: BoxDecoration(
@@ -33,6 +34,15 @@ ThemeData get lightTheme {
           ),
         ),
       ),
+    ),
+    appBarTheme: AppBarTheme(
+      color: colorScheme.background,
+      iconTheme: IconThemeData(
+        color: colorScheme.onBackground,
+      ),
+    ),
+    bottomAppBarTheme: BottomAppBarTheme(
+      color: colorScheme.onBackground,
     ),
     textTheme: GoogleFonts.notoSansJPTextTheme(
       TextTheme(
