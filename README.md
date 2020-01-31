@@ -29,7 +29,7 @@ $ flutter config --enable-web
 
 Generate auto generated files
 ```
-$ flutter pub run build build_runner
+$ flutter pub run build_runner build
 ```
 
 Run app
